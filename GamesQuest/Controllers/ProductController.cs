@@ -37,12 +37,12 @@ namespace GamesQuest.Controllers
                     .OrderBy(p => p.ProductId);
                 currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.CategoryName == category)?.CategoryName;
             }
-
-            return View(new ProductListViewModel
+            var x = new ProductListViewModel
             {
                 Products = products,
                 CurrentCategory = currentCategory
-            });
+            };
+            return View(x);
         }
     }
 }
