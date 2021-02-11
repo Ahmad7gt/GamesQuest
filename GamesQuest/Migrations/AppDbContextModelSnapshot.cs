@@ -81,8 +81,8 @@ namespace GamesQuest.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("ShortDescription")
                         .HasColumnType("nvarchar(max)");
@@ -104,7 +104,7 @@ namespace GamesQuest.Migrations
                             InStock = true,
                             LongDescription = "Play on the next level with PS4 Pro that supports 4K and HDR. Includes a specially designed The Last of Us Part II console and hand control, a physical edition of The Last of Us Part II and a coupon for digital bonus content for the game.",
                             Name = "Playstation 4 Pro",
-                            Price = 3800m,
+                            Price = 3800.0,
                             ShortDescription = "SONY PlayStation 4 Pro 500GB"
                         },
                         new
@@ -117,7 +117,7 @@ namespace GamesQuest.Migrations
                             InStock = true,
                             LongDescription = "The Xbox One X is the most powerful gaming console ever for gaming in true 4K resolution. Contains a specially designed Cyberpunk 2077 console and hand control as well as a digital download of Cyberpunk 2077 when the game is released on 17/9..",
                             Name = "Xbox One X",
-                            Price = 2750m,
+                            Price = 2750.0,
                             ShortDescription = "MICROSOFT Xbox One X Cyberpunk 2077 Limited Edition Bundle (1TB)"
                         },
                         new
@@ -130,7 +130,7 @@ namespace GamesQuest.Migrations
                             InStock = true,
                             LongDescription = "MSI GP65 Leopard (9SE-236NE) is a very powerful portable gaming computer with 15.6FHD IPS display(144 Hz), Intel Core i7 - 9750H processor 16 GB RAM 512 GB SSD NVIDIA GeForce RTX 2060 graphics",
                             Name = "MSI GP65",
-                            Price = 13900m,
+                            Price = 13900.0,
                             ShortDescription = "MSI GP65 Leopard (9SE-236NE) - 15.6"
                         },
                         new
@@ -143,7 +143,7 @@ namespace GamesQuest.Migrations
                             InStock = true,
                             LongDescription = "ASUS ROG Zephyrus G GA502DU-AL025T is a powerful portable gaming computer with 15.6 FHD IPS display (120 Hz), AMD Ryzen 7 processor, 2 x 8 GB RAM, 512 GB SSD, NVIDIA GeForce GTX 1660 Ti graphics and Windows 10 This gaming computer can handle demanding PC games.",
                             Name = "ASUS ROG Zephyrus G",
-                            Price = 16500m,
+                            Price = 16500.0,
                             ShortDescription = "ASUS ROG Zephyrus G GA502DU-AL025T - 15.6"
                         },
                         new
@@ -156,7 +156,7 @@ namespace GamesQuest.Migrations
                             InStock = true,
                             LongDescription = "Gaming chair in artificial leather with ergonomic similarities to a racing chair you see in rally cars. With high back and extra pillows for headrest and backrest, you will not have problems with back and neck after countless hours in this chair.",
                             Name = "DELTACO GAMING Gaming Chair",
-                            Price = 1399m,
+                            Price = 1399.0,
                             ShortDescription = "DELTACO GAMING Gaming Chair PU Leather (GAM-052) - Black / Orange"
                         },
                         new
@@ -169,7 +169,7 @@ namespace GamesQuest.Migrations
                             InStock = true,
                             LongDescription = "Mouse and keyboard for the FPS expert. T.A.C.4 gives you a huge advantage in action games like Call of Duty, Fallout or Destiny.",
                             Name = "HORI PS4 T.A.C 4",
-                            Price = 1300m,
+                            Price = 1300.0,
                             ShortDescription = "HORI PS4 T.A.C 4 Mouse and keyboard controller"
                         });
                 });
